@@ -38,8 +38,8 @@ export class AuthService {
     );
   }
 
-  register(model: any) {
-    return this.http.post(this.baseUrl + 'register', model); // need to subscribe to this in the component
+  register(user: User) {
+    return this.http.post(this.baseUrl + 'register', user); // need to subscribe to this in the component
   }
 
   loggedIn() {
